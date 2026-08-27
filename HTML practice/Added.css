@@ -1,0 +1,52 @@
+body {
+background-color: rgb(133, 41, 41); }
+
+
+/* From W3Schools */
+/* Add a black background color to the top navigation */
+ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 4%;
+  overflow: hidden;
+  background-color: #84e89b;
+}
+
+/* make the list items appear horizontally */
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 100px , 100px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #8f1414;
+}
+
+
+
+/* From W3Schools */
+.button {
+  background-color: #73bea2;
+  border: 5px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+/* From W3Schools */
+.button:hover {
+  background-color: #4CAF50;
+  color: rgb(189, 67, 67);
+}

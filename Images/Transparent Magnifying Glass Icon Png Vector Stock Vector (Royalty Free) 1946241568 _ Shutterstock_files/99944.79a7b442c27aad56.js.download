@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[99944],{699944:(e,r,a)=>{a.r(r),a.d(r,{BorderContainer:()=>l});var s=a(134408);let l=({children:e})=>(0,s.jsx)("div",{className:"relative z-10 flex size-full flex-col items-stretch gap-100 overflow-hidden rounded-surface-sm bg-bg-primary","data-automation":"conversion-panel-border-container",children:e})}}]);
+//# sourceMappingURL=99944.79a7b442c27aad56.js.map

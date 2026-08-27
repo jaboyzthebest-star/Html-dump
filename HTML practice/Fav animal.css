@@ -1,0 +1,24 @@
+body {
+background-color: rgb(215, 147, 12); 
+margin: 0;
+}
+@font-face {
+  font-family: 'MagicFont';
+  src: url('Font/Magicmedieval-pRV1.ttf') format('truetype');
+}
+h1 {
+  color: rgb(118, 142, 21);
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgb(230, 191, 66);
+  font-family: 'MagicFont', Courier, monospace;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+}
