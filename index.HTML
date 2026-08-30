@@ -75,9 +75,9 @@
 
 <!-- given by Pin -->
     <script>
-        let randomcard = Math.floor(Math.random() * 6);
+        let day = new Date().getDate();
         let cotd = document.getElementById("card-of-the-day");
-        cotd.src="Images/cotd " + String(randomcard) + ".webp";
+        cotd.src="Images/cotd " + String(day) + ".webp";
     </script>
 </body>
 </html>
