@@ -42,7 +42,7 @@
 
 <!-- end of header -->
 
-<div class="intro">
+<div class="intro-home">
     <div class="about-us">
         <h2>Who are we?</h2>
         <p>We are a super cool magic site. Sadly, we don't have real life location but we still recommend 
@@ -52,32 +52,84 @@
         </div>
     <div class="card-of-the-day">
         <h2>Card of the day</h2>
-        <a href="https://scryfall.com/card/war/1/abundant-growth" target="_blank">
-            <img src="Images/cotd 0.webp" id="card-of-the-day" alt="Card of the Day"  class="card-image" width="20%">
+        <a id="card-of-the-day-link" href="https://scryfall.com/card/war/1/abundant-growth" target="_blank">
+            <img src="Images/cotd 0.webp" id="card-of-the-day" alt="Card of the Day"  class="card-image" width="40%">
         </a>
     </div>
 </div>
+    <div class="local-game-store">
+    <h3>Place to play</h3>
+    <a href="https://www.cardmerchanttakapuna.co.nz/" target="_blank">
+        <img src="Images/CardShop.jpg" alt="Local Game Store" class="store-image" width="40%">
+    </a>
+</div>
+
+
+<div class="news">
+    <h3>News</h3>
+    <p>Check out the latest news in the world of Magic: The Gathering. Stay updated with new releases, tournaments, and community events.</p>   
+    <a href="https://magic.wizards.com/en/news" target="_blank">
+        <img src="Images/NewsImage.jpg" alt="Magic News" class="store-image" width="40%">
+    </a>
+</div>
+</body>
 
 
 
-    <h1>Magic font</h1>
-    <p>Magic the gathering</p>
+
+
 
 
 <footer>
     <p>&copy; 2026 Magic The Gathering: Card Compendium Collection. All rights reserved.</p>
     <div class="social-icons-box">
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
 
-<!-- given by Pin -->
+<!-- given by Pin for the Card of the Day -->
     <script>
-        let day = new Date().getDate();
+        let day = new Date().getDate()-1;
         let cotd = document.getElementById("card-of-the-day");
+        let link = document.getElementById("card-of-the-day-link");
+        let links_array = [
+            "https://scryfall.com/card/rvr/1/karn-the-great-creator",
+            "https://scryfall.com/card/bbd/241/mycosynth-lattice",
+            "https://scryfall.com/card/iko/151/exuberant-wolfbear",
+            "https://scryfall.com/card/shm/68/hollowborn-barghest",
+            "https://scryfall.com/card/iko/184/eerie-ultimatum",
+            "https://scryfall.com/card/vma/19/brilliant-halo",
+            "https://scryfall.com/card/dsc/108/verge-rangers",
+            "https://scryfall.com/card/cmr/266/amareth-the-lustrous",
+            "https://scryfall.com/card/2x2/312/pithing-needle",
+            "https://scryfall.com/card/big/3/oltec-matterweaver",
+            "https://scryfall.com/card/inr/68/hullbreaker-horror",
+            "https://scryfall.com/card/ltr/207/gandalf-the-grey",
+            "https://scryfall.com/card/m10/173/pt/serpente-terrestre-de-craw-(craw-wurm)",
+            "https://scryfall.com/card/hob/42/great-gilded-boat",
+            "https://scryfall.com/card/cmm/835/sentinel-sliver",
+            "https://scryfall.com/card/fic/6/tifa-martial-artist",
+            "https://scryfall.com/card/me2/178/stampede",
+            "https://scryfall.com/card/mm3/133/revive",
+            "https://scryfall.com/card/trk/321/swamp",
+            "https://scryfall.com/card/msc/182/bedevil",
+            "https://scryfall.com/card/cmm/173/mikaeus-the-unhallowed",
+            "https://scryfall.com/card/voc/22/shadowgrange-archfiend",
+            "https://scryfall.com/card/ecl/228/grubs-command",
+            "https://scryfall.com/card/mkc/84/smugglers-share",
+            "https://scryfall.com/card/bfz/248/spawning-bed",
+            "https://scryfall.com/card/sld/423/elvish-spirit-guide",
+            "https://scryfall.com/card/9ed/102/temporal-adept",
+            "https://scryfall.com/card/trk/325/forest",
+            "https://scryfall.com/card/afr/117/reapers-talisman",
+            "https://scryfall.com/card/dbl/520/boarded-window",
+            "https://scryfall.com/card/frf/86/sultai-runemark"
+
+        ];
         cotd.src="Images/cotd " + String(day) + ".webp";
+        link.href = links_array[day];
     </script>
 </body>
 </html>
