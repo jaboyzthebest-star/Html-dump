@@ -9,8 +9,11 @@
 *{
   /* sets everything to be the mtg font */
   background: #add8e6;
-   font-family: 'MagicFont',Courier, monospace;}
-
+  font-family: 'MagicFont',Courier, monospace;
+}
+body{
+  overflow-x: hidden;
+}
 /* All for the top navigation bar */
 /* From W3Schools.com */ 
 /* Add a black background color to the top navigation */
@@ -178,6 +181,78 @@ h3 {
 }
 /* Home page has ended */
 
+/* All for the about us page */
+.intro-About-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 24px;
+  width: 100%;
+}
+.about-us-page{
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.about-us-page h2 {
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #b5b8ff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 5px solid #000000;
+}
+.intro-About-us2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 24px;
+  width: 100%;
+}
+.about-us-page2{
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.about-us-page2 h2 {
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #b5b8ff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 5px solid #000000;
+}
+
+.intro-About-us3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 24px;
+  width: 100%;
+}
+.about-us-page3{
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.about-us-page3 h2 {
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #b5b8ff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 5px solid #000000;
+}
+/* About us has ended */
 
 
 /* All for the footer section */
