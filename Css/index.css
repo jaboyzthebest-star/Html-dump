@@ -256,12 +256,31 @@ h3 {
 /* About us has ended */
 
 /* All for the contact page */
-.contact-page{
-  text-align: center;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px;
+.contact-us-intro h1{
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #b5b8ff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 5px solid #000000;
 }
+.contact-us-intro p{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 /* Contact page has ended */
 
 /* All for the footer section */

@@ -26,7 +26,7 @@
    ADD THE SEARCH BAR FEATURE TO THE CARD INFO-->
   <a class="not-active box" id="Store" href="Store.html">Store</a>
   <a class="not-active box" id="About-us" href="About-us.html">About us</a>
-  <a class="active box" id="Contact" href="Contact-us.html">Contact</a>
+  <a class="active box" id="Contact" href="Contact.html">Contact</a>
 </div>
 </div>
 <div class="header-text">
@@ -42,10 +42,23 @@
 
 <!-- end of header -->
 <!-- Write code here -->
-
-
-
-
+ <div class="contact-us-intro">
+<h1>Contact Us</h1>
+<p>Have questions or feedback? We'd love to hear from you!</p>
+ </div>
+<div class="form-container">
+        <form action="https://formspree.io/f/xqpkzvje" method="POST"> <!-- creates the form -->
+            <p>Name</p>
+            <input type="text" name="Name" placeholder="Full Name" autocomplete="off" required> <!-- creates the name input section -->
+            <p>Email Address</p>
+            <input type="email" name="Email" placeholder="Email Address" autocomplete="off" required> <!-- creates the email input section -->
+            <p>Message</p>
+            <textarea name="Message" placeholder="Your message here..." autocomplete="off" required></textarea> <!-- creates the message input section -->
+            <br><br>
+            <input type="submit"> <!-- creates the submit button -->
+            <br><br><br><br><br>
+        </form>
+</div>
 <!-- end of body -->
 
 <footer>
