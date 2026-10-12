@@ -27,7 +27,7 @@ body{
 }
 .all-header{
   background-color: #b5b8ff;
-  padding: 10px;
+  padding: 5px;
   border-bottom: 5px solid black;
 }
 .header {
@@ -282,6 +282,47 @@ h3 {
 }
 
 /* Contact page has ended */
+
+/* All for the store page */
+.store-intro h2{
+  text-align: center;
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: #b5b8ff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: 5px solid #000000;
+}
+.store-intro p{
+  text-align: center;
+  width: 100%;
+}
+
+.store-products1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  outline: 5px solid #000000;
+}
+.product-image {
+  width: 10%;
+  height: 10%;
+  border-radius: 10px;
+}
+.product h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: 2px solid #000000;
+}
+/* Store page has ended */
 
 /* All for the footer section */
 footer{
