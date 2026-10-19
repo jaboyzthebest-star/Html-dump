@@ -33,10 +33,13 @@
     <h1>Magic The Gathering: Card Compendium Collection</h1>
 </div>
 
-    <!-- From W3Schools.com --> 
+    <!-- From W3Schools.com -->
+     
 <div class="search-bar">
     <img src="Images/search.png" alt="Search Icon" class="search-icon" style="width: 20px; height: 20px; margin-right: 5px;">
-  <input type="text" placeholder="Search cards...">    
+  <input id="searchbar input" type="text" placeholder="Search cards..." oninput="search()" onfocus="show_searchlist()" onfocusout="hide_searchlist()">    
+</div>  
+<div id="dropdown-content"> 
 </div>
 </div>
 
@@ -73,12 +76,6 @@
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
-
-<!-- given by Pin -->
-    <script>
-        let randomcard = Math.floor(Math.random() * 6);
-        let cotd = document.getElementById("card-of-the-day");
-        cotd.src="Images/cotd " + String(randomcard) + ".webp";
-    </script>
+<script src="search.js"></script>
 </body>
 </html>

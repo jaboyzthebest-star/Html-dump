@@ -80,6 +80,23 @@ body{
   margin-top: 10px;
   padding: 10px;
 }
+/* Search bar*/ 
+#dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10000000;
+  background-color: #b5b8ff;
+    width: 100%;
+}
+#dropdown-content a {
+  color: #000000;
+  text-decoration: none;
+  background-color: #b5b8ff;
+  text-align: center;
+  padding: 1vw; 
+  
+}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -438,10 +455,19 @@ h3 {
   background-color: #000000;
   padding: 0.5vw;
   border-radius: 10px;
-  width: 50%;
+  width: 100%;
   height: 50%;
   transition: transform 0.3s ease;
 }
+.deck-link {
+  background-color: #b5b8ff;
+  padding: 0.5vw;
+  border-radius: 10px;
+  width: 75%;
+  height: 50%;
+  transition: transform 0.3s ease;
+}
+
 .deck-image:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
