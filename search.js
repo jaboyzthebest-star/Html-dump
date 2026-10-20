@@ -1,13 +1,45 @@
 let pages = [
     "Karn, the great creator",
-    "Card of the Day 2",
-    "Card of the Day 3"
+    "Mycosynth lattice",
+    "Exuberant Wolfbear",
+    "Hollowborn Barghest",
+    "Eerie ultimatum",
+    "Brilliant halo",
+    "Verge rangers",
+    "Amareth, the Lustrous",
+    "Pithing needle",
+    "Oltec matterweaver",
+    "Hullbreaker horror",
+    "Gandalf the Grey",
+    "Craw wurm",
+    "Great gilded boat",
+    "Sentinel-sliver",
+    "Tifa martial artist",
+    "Stampede",
+    "Revive",
+    "Swamp",
+    "Bedevil",
+    "Mikaeus the unhallowed",
+    "Shadowgrange archfiend",
+    "Grubs command",
+    "Smugglers share",
+    "Spawning bed",
+    "Elvish spirit guide",
+    "Temporal adept",
+    "Forest",
+    "Reapers talisman",
+    "Boarded window",
+    "Sultai-runemark",
+    "Bargo king eternal",
+    "Krenko mob boss",
+    "Edgar Markov",
+    "Prismari the inspiration"
 ]
  
-let dropdown = document.getElementById("dropdown-content");
+let dropdown = document.getElementsByClassName("dropdown-content")[0];
  
 function search() {
-    let text = document.getElementById("searchbar input").value.toLowerCase();
+    let text = document.getElementsByClassName("searchbar input","searchbar input2")[0].value.toLowerCase();
     let elegable_pages = []
     for(i=0; i < pages.length; i++){
         if(pages[i].toLowerCase().indexOf(text) !== -1){

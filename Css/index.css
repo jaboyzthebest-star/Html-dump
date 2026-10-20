@@ -25,7 +25,7 @@ body{
 }
 .all-header{
   background-color: #b5b8ff;
-  padding: 10px;
+  padding: 0.5vw;
   border-bottom: 5px solid black;
 }
 .header {
@@ -33,24 +33,59 @@ body{
   align-items: center;
   justify-content: space-between;
   background-color: #b5b8ff;
-  padding: 10px;
+  padding: 0.5vw;
 }
-
 .search-bar {
   display: flex;
   justify-content: right;
-  margin-top: 10px;
+  margin-top: 0.5vw;
   color: #b5b8ff;
   background-color: #add8e6;
-  padding: 10px;
+  padding: 0.5vw;
 }
 .search-bar input[type="text"] {
   background-color: #67abdd;
   border: 2px solid #000000;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 1vw;
     text-align: center;
     font-size: 16px;
+
+}
+
+.card-image-and-info{
+  display:flex;
+  padding:2vw;
+  width:100%;
+  justify-content: center;
+    justify-content: space-evenly;
+}
+
+.infoimage{
+  align-items: center;
+  padding:1vw;
+  background-color: #b5b8ff;
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+}
+
+.and-info{
+  text-align: center;
+  padding: 1.5vw,;
+}
+.and-info h2 {
+  padding: 2vw;
+  font-size: 60px;
+  background-color: #b5b8ff;
+border-radius: 40px;
+
+}
+.and-info pre {
+  background-color: #b5b8ff;
+  padding:0.5vw;
+  font-size: 20px;
+  border-radius: 40px;
 
 }
 /* Style the links inside the navigation bar */
@@ -59,43 +94,60 @@ body{
   float: left;
   color: #52abf8;
   text-align: center;
-  padding: 20px 70px;
+  padding: 1vw 3.5vw;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 1vw;
   
 }
-.logo {
-  width: 70px;
-  height: 50px;
-  border-radius: 10px;
-  margin-right: 10px;
- outline: 5px solid #000000;
+.logo-holder {
+  background-color: #b5b8ff;
 }
 
+.logo {
+  position: relative;
+  z-index: 10000;
+  border-radius: 0.5vw;
+  margin-right: 0.5vw;
+ outline: 0.25vw solid #000000;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.logo:hover{
+ transform: scale(1.1);  
+ outline: 0.5vw solid #3e3838;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
 .bar {
   width: 100%;
   height: 2px;
   background-color: #000000;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 0.5vw;
+  padding: 0.5vw;
 }
 /* Search bar*/ 
-#dropdown-content {
+.dropdown-content {
   display: none;
   flex-direction: column;
   position: absolute;
   z-index: 10000000;
   background-color: #b5b8ff;
     width: 100%;
+    max-height: 20vw;
+    overflow-y: auto;
 }
-#dropdown-content a {
+.dropdown-content a {
   color: #000000;
   text-decoration: none;
   background-color: #b5b8ff;
   text-align: center;
   padding: 1vw; 
-  
+  outline: 2px solid #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dropdown-content a:hover {
+  background-color: #1492ff;
+  color: rgb(255, 255, 255);
+  outline: 2px solid #000000;
 }
 
 /* Change the color of links on hover */
