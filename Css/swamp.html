@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- From W3Schools.com --> 
+    <div class="all-header">
+    <div class="header">    
+        <a class="logo-holder" href="index.html">
+        <img src="Images/logo.jpg" alt="Logo" class="logo" style="width: 90px; height: 70px;">
+        </a>
+
+<div class="topnav">
+  <a class="not-active" id="Home"href="index.html">Home</a>
+  <a class="not-active box" id="Deck-architypes" href="Deck-architypes.html">Deck architypes</a> 
+  <!-- <a class="not-active box" id="Deck-architypes-CEDH" href="Deck-architypes-CEDH.html">Deck architypes CEDH</a> 
+   FUSE THE CASUAL AND COMPETITIVE-->
+  <a class="active box" id="Card-info" href="Card-info.html">Card Info</a> 
+  <!--<a class="not-active box" id="Card-Search" href="Card-Search.html">Card Search</a>
+   ADD THE SEARCH BAR FEATURE TO THE CARD INFO-->
+  <a class="not-active box" id="Store" href="Store.html">Store</a>
+  <a class="not-active box" id="About-us" href="About-us.html">About us</a>
+  <a class="not-active box" id="Contact" href="Contact.html">Contact</a>
+</div>
+</div>
+<div class="header-text">
+    <h1>Magic The Gathering: Card Compendium Collection</h1>
+</div>
+
+    <!-- From W3Schools.com -->
+     
+<div class="search-bar">
+    <img src="Images/search.png" alt="Search Icon" class="search-icon" style="width: 20px; height: 20px; margin-right: 5px;">
+  <input class="searchbar input" type="text" placeholder="Search cards..." oninput="search()" onfocus="show_searchlist()" onfocusout="hide_searchlist()">    
+</div>  
+<div class="dropdown-content"> 
+
+</div>
+</div>
+        <script src="search.js"></script>
+<!-- end of header -->
+<div class="total-cart">
+<div class="cart">
+<img src="Images/Cart.png" alt="Cart Icon" class="cart-icon" style="width: 30px; height: 30px; margin-right: 5px;">
+    <span class="cart-count">0</span>
+</div>
+
+<div class="clear-cart">
+    <button class="clear-cart-button">Clear Cart</button>
+</div>
+</div>
+
+
+<div class="card-image-and-info">
+<img src="Images/cotd 18.webp" class="infoimage">
+<div class="and-info">
+<h2>Swamp</h2>
+
+<pre>Taps for a black mana</pre>
+
+<button class="add-to-cart-button">Add to Cart</button>
+</div>
+
+</div>
+<script>
+let cartCount = 0;
+
+// 2. Select DOM elements
+const counter = document.getElementsByClassName('cart-count')[0];
+
+document.querySelectorAll('.add-to-cart-button').forEach(button => {
+    button.addEventListener('click', () => {
+        cartCount++;
+        counter.textContent = cartCount;
+    });
+});
+
+// 3. Define function to update the dynamic badge layout
+function updateCartBadge() {
+    // Calculate total quantity of items in the cart array
+    const totalItems = cartCount;
+    
+    // Update the HTML text content of the badge
+    counter.textContent = totalItems;
+}
+
+// 4. Function to handle addition logic safely
+function addToCart(event) {
+    const productId = event.target.getAttribute('data-id');
+
+    // Check if the product already exists inside the cart array
+    const existingProduct = cart.find(item => item.id === productId);
+
+    if (existingProduct) {
+        // If it exists, increase quantity
+        existingProduct.quantity += 1;
+    } else {
+        // If it's a new product, push a new object configuration into the array
+        cart.push({ id: productId, quantity: 1 });
+    }
+
+    // Refresh the visual badge count
+
+}
+const clearCartButton = document.querySelector('.clear-cart-button');
+clearCartButton.addEventListener('click', () => {
+    cartCount = 0;
+    counter.textContent = cartCount;
+    // Optionally, clear the cart array if you are maintaining one
+    cart.length = 0; // Clear the cart array
+});
+
+
+
+// 5. Loop through all product buttons and bind the click event listener
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', addToCart);
+});
+</script>
+
+<footer>
+    <p>&copy; 2026 Magic The Gathering: Card Compendium Collection. All rights reserved.</p>
+    <div class="social-icons-box">
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
