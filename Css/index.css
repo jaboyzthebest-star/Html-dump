@@ -209,6 +209,10 @@ background-color: #b5b8ff;
   background-color: #b5b8ff;
   padding: 1vw;
 }
+
+#card-of-the-day:hover{
+ transform: scale(1.01);  
+}
 /* For the rest of the home page */
 
 .local-game-store{
