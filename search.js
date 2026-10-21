@@ -5,7 +5,7 @@ let pages = [
     "Hollowborn Barghest",
     "Eerie ultimatum",
     "Brilliant halo",
-    "Verge rangers",
+    /*"Verge rangers",
     "Amareth, the Lustrous",
     "Pithing needle",
     "Oltec matterweaver",
@@ -16,14 +16,14 @@ let pages = [
     "Sentinel-sliver",
     "Tifa martial artist",
     "Stampede",
-    "Revive",
+    "Revive",*/
     "Swamp",
-    "Bedevil",
+    /*"Bedevil",*/
     "Mikaeus the unhallowed",
     "Shadowgrange archfiend",
     "Grubs command",
     "Smugglers share",
-    "Spawning bed",
+    /*"Spawning bed",
     "Elvish spirit guide",
     "Temporal adept",
     "Forest",
@@ -33,7 +33,7 @@ let pages = [
     "Bargo king eternal",
     "Krenko mob boss",
     "Edgar Markov",
-    "Prismari the inspiration"
+    "Prismari the inspiration"*/
 ]
  
 let dropdown = document.getElementsByClassName("dropdown-content")[0];
